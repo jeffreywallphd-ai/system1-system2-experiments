@@ -1,0 +1,690 @@
+{
+  "execution_mode": "mock",
+  "results": {
+    "sharc/B0_simple": {
+      "benchmark": "sharc",
+      "intended": 4,
+      "completed": 4,
+      "attempted": 4,
+      "missing": 0,
+      "primary_endpoint": 0.25,
+      "accuracy": 0.25,
+      "failures": {},
+      "families": 4,
+      "cases": 4,
+      "resource_totals": {
+        "actions": 0,
+        "generated_tokens": 0,
+        "laya_leaves": 0,
+        "observed_generated_tokens": 0,
+        "repairs": 0,
+        "replans": 0,
+        "s1_calls": 0,
+        "s1_encoder_tokens": 0,
+        "s1_questions": 0,
+        "s2_calls": 0,
+        "s2_leaves": 0,
+        "s2_prompt_tokens": 0,
+        "service_seconds": 0.0,
+        "supervisor_calls": 0,
+        "unknown_usage_calls": 0
+      },
+      "mean_wall_seconds": 0.0009705500269774348,
+      "s2_calls_per_success": 0.0,
+      "wall_time_complete": true,
+      "confusion": {
+        "YES": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "NO": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "IRRELEVANT": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "MORE": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        }
+      },
+      "class_recall": {
+        "YES": 1.0,
+        "NO": 0.0,
+        "IRRELEVANT": 0.0,
+        "MORE": 0.0
+      },
+      "balanced_accuracy": 0.25,
+      "macro_f1": 0.1,
+      "more_precision": null,
+      "more_recall": 0.0,
+      "invalid_rate": 0.0,
+      "unnecessary_clarification": 0.0,
+      "inappropriate_terminal": 1.0,
+      "probability_cases": 0,
+      "brier": null,
+      "log_loss": null,
+      "ece_10_bins": null
+    },
+    "sharc/B1_laya": {
+      "benchmark": "sharc",
+      "intended": 4,
+      "completed": 4,
+      "attempted": 4,
+      "missing": 0,
+      "primary_endpoint": 0.25,
+      "accuracy": 0.25,
+      "failures": {},
+      "families": 4,
+      "cases": 4,
+      "resource_totals": {
+        "actions": 0,
+        "generated_tokens": 0,
+        "laya_leaves": 0,
+        "observed_generated_tokens": 0,
+        "repairs": 0,
+        "replans": 0,
+        "s1_calls": 4,
+        "s1_encoder_tokens": 189,
+        "s1_questions": 4,
+        "s2_calls": 0,
+        "s2_leaves": 0,
+        "s2_prompt_tokens": 0,
+        "service_seconds": 0.0002753998851403594,
+        "supervisor_calls": 0,
+        "unknown_usage_calls": 0
+      },
+      "mean_wall_seconds": 0.001989125012187287,
+      "s2_calls_per_success": 0.0,
+      "wall_time_complete": true,
+      "confusion": {
+        "YES": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "NO": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "IRRELEVANT": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "MORE": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        }
+      },
+      "class_recall": {
+        "YES": 1.0,
+        "NO": 0.0,
+        "IRRELEVANT": 0.0,
+        "MORE": 0.0
+      },
+      "balanced_accuracy": 0.25,
+      "macro_f1": 0.1,
+      "more_precision": null,
+      "more_recall": 0.0,
+      "invalid_rate": 0.0,
+      "unnecessary_clarification": 0.0,
+      "inappropriate_terminal": 1.0,
+      "probability_cases": 4,
+      "brier": 1.02,
+      "log_loss": 1.8161075557302175,
+      "ece_10_bins": 0.44999999999999996,
+      "log_loss_clip": 1e-12,
+      "reliability_bins": [
+        {
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "count": 4,
+          "confidence": 0.7,
+          "accuracy": 0.25
+        },
+        {
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        }
+      ]
+    },
+    "sharc/B2_s2": {
+      "benchmark": "sharc",
+      "intended": 4,
+      "completed": 4,
+      "attempted": 4,
+      "missing": 0,
+      "primary_endpoint": 0.25,
+      "accuracy": 0.25,
+      "failures": {},
+      "families": 4,
+      "cases": 4,
+      "resource_totals": {
+        "actions": 0,
+        "generated_tokens": 128,
+        "laya_leaves": 0,
+        "observed_generated_tokens": 128,
+        "repairs": 0,
+        "replans": 0,
+        "s1_calls": 0,
+        "s1_encoder_tokens": 0,
+        "s1_questions": 0,
+        "s2_calls": 4,
+        "s2_leaves": 0,
+        "s2_prompt_tokens": 189,
+        "service_seconds": 0.0002867999719455838,
+        "supervisor_calls": 0,
+        "unknown_usage_calls": 0
+      },
+      "mean_wall_seconds": 0.0021745249978266656,
+      "s2_calls_per_success": 4.0,
+      "wall_time_complete": true,
+      "confusion": {
+        "YES": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "NO": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "IRRELEVANT": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "MORE": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        }
+      },
+      "class_recall": {
+        "YES": 1.0,
+        "NO": 0.0,
+        "IRRELEVANT": 0.0,
+        "MORE": 0.0
+      },
+      "balanced_accuracy": 0.25,
+      "macro_f1": 0.1,
+      "more_precision": null,
+      "more_recall": 0.0,
+      "invalid_rate": 0.0,
+      "unnecessary_clarification": 0.0,
+      "inappropriate_terminal": 1.0,
+      "probability_cases": 0,
+      "brier": null,
+      "log_loss": null,
+      "ece_10_bins": null
+    },
+    "sharc/B3_cascade": {
+      "benchmark": "sharc",
+      "intended": 4,
+      "completed": 4,
+      "attempted": 4,
+      "missing": 0,
+      "primary_endpoint": 0.25,
+      "accuracy": 0.25,
+      "failures": {},
+      "families": 4,
+      "cases": 4,
+      "resource_totals": {
+        "actions": 0,
+        "generated_tokens": 128,
+        "laya_leaves": 0,
+        "observed_generated_tokens": 128,
+        "repairs": 0,
+        "replans": 0,
+        "s1_calls": 4,
+        "s1_encoder_tokens": 189,
+        "s1_questions": 4,
+        "s2_calls": 4,
+        "s2_leaves": 0,
+        "s2_prompt_tokens": 189,
+        "service_seconds": 0.0004645000444725156,
+        "supervisor_calls": 0,
+        "unknown_usage_calls": 0
+      },
+      "mean_wall_seconds": 0.003814075025729835,
+      "s2_calls_per_success": 4.0,
+      "wall_time_complete": true,
+      "confusion": {
+        "YES": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "NO": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "IRRELEVANT": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "MORE": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        }
+      },
+      "class_recall": {
+        "YES": 1.0,
+        "NO": 0.0,
+        "IRRELEVANT": 0.0,
+        "MORE": 0.0
+      },
+      "balanced_accuracy": 0.25,
+      "macro_f1": 0.1,
+      "more_precision": null,
+      "more_recall": 0.0,
+      "invalid_rate": 0.0,
+      "unnecessary_clarification": 0.0,
+      "inappropriate_terminal": 1.0,
+      "probability_cases": 0,
+      "brier": null,
+      "log_loss": null,
+      "ece_10_bins": null
+    },
+    "sharc/B4_triage": {
+      "benchmark": "sharc",
+      "intended": 4,
+      "completed": 4,
+      "attempted": 4,
+      "missing": 0,
+      "primary_endpoint": 0.25,
+      "accuracy": 0.25,
+      "failures": {},
+      "families": 4,
+      "cases": 4,
+      "resource_totals": {
+        "actions": 0,
+        "generated_tokens": 0,
+        "laya_leaves": 0,
+        "observed_generated_tokens": 0,
+        "repairs": 0,
+        "replans": 0,
+        "s1_calls": 8,
+        "s1_encoder_tokens": 319,
+        "s1_questions": 8,
+        "s2_calls": 0,
+        "s2_leaves": 0,
+        "s2_prompt_tokens": 0,
+        "service_seconds": 0.0004907997790724039,
+        "supervisor_calls": 0,
+        "unknown_usage_calls": 0
+      },
+      "mean_wall_seconds": 0.004331149975769222,
+      "s2_calls_per_success": 0.0,
+      "wall_time_complete": true,
+      "confusion": {
+        "YES": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "NO": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "IRRELEVANT": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "MORE": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        }
+      },
+      "class_recall": {
+        "YES": 1.0,
+        "NO": 0.0,
+        "IRRELEVANT": 0.0,
+        "MORE": 0.0
+      },
+      "balanced_accuracy": 0.25,
+      "macro_f1": 0.1,
+      "more_precision": null,
+      "more_recall": 0.0,
+      "invalid_rate": 0.0,
+      "unnecessary_clarification": 0.0,
+      "inappropriate_terminal": 1.0,
+      "probability_cases": 0,
+      "brier": null,
+      "log_loss": null,
+      "ece_10_bins": null
+    },
+    "sharc/H1_plan_once": {
+      "benchmark": "sharc",
+      "intended": 4,
+      "completed": 4,
+      "attempted": 4,
+      "missing": 0,
+      "primary_endpoint": 0.25,
+      "accuracy": 0.25,
+      "failures": {},
+      "families": 4,
+      "cases": 4,
+      "resource_totals": {
+        "actions": 0,
+        "generated_tokens": 128,
+        "laya_leaves": 4,
+        "observed_generated_tokens": 128,
+        "repairs": 0,
+        "replans": 0,
+        "s1_calls": 4,
+        "s1_encoder_tokens": 174,
+        "s1_questions": 4,
+        "s2_calls": 4,
+        "s2_leaves": 0,
+        "s2_prompt_tokens": 74,
+        "service_seconds": 0.0004837001906707883,
+        "supervisor_calls": 4,
+        "unknown_usage_calls": 0
+      },
+      "mean_wall_seconds": 0.0048325750103686005,
+      "s2_calls_per_success": 4.0,
+      "wall_time_complete": true,
+      "confusion": {
+        "YES": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "NO": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "IRRELEVANT": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "MORE": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        }
+      },
+      "class_recall": {
+        "YES": 1.0,
+        "NO": 0.0,
+        "IRRELEVANT": 0.0,
+        "MORE": 0.0
+      },
+      "balanced_accuracy": 0.25,
+      "macro_f1": 0.1,
+      "more_precision": null,
+      "more_recall": 0.0,
+      "invalid_rate": 0.0,
+      "unnecessary_clarification": 0.0,
+      "inappropriate_terminal": 1.0,
+      "probability_cases": 0,
+      "brier": null,
+      "log_loss": null,
+      "ece_10_bins": null
+    },
+    "sharc/H2_mixed": {
+      "benchmark": "sharc",
+      "intended": 4,
+      "completed": 4,
+      "attempted": 4,
+      "missing": 0,
+      "primary_endpoint": 0.25,
+      "accuracy": 0.25,
+      "failures": {},
+      "families": 4,
+      "cases": 4,
+      "resource_totals": {
+        "actions": 0,
+        "generated_tokens": 128,
+        "laya_leaves": 4,
+        "observed_generated_tokens": 128,
+        "repairs": 0,
+        "replans": 0,
+        "s1_calls": 4,
+        "s1_encoder_tokens": 174,
+        "s1_questions": 4,
+        "s2_calls": 4,
+        "s2_leaves": 0,
+        "s2_prompt_tokens": 74,
+        "service_seconds": 0.0004763000179082155,
+        "supervisor_calls": 4,
+        "unknown_usage_calls": 0
+      },
+      "mean_wall_seconds": 0.005004650040064007,
+      "s2_calls_per_success": 4.0,
+      "wall_time_complete": true,
+      "confusion": {
+        "YES": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "NO": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "IRRELEVANT": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "MORE": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        }
+      },
+      "class_recall": {
+        "YES": 1.0,
+        "NO": 0.0,
+        "IRRELEVANT": 0.0,
+        "MORE": 0.0
+      },
+      "balanced_accuracy": 0.25,
+      "macro_f1": 0.1,
+      "more_precision": null,
+      "more_recall": 0.0,
+      "invalid_rate": 0.0,
+      "unnecessary_clarification": 0.0,
+      "inappropriate_terminal": 1.0,
+      "probability_cases": 0,
+      "brier": null,
+      "log_loss": null,
+      "ece_10_bins": null
+    },
+    "sharc/C1_s2_workers": {
+      "benchmark": "sharc",
+      "intended": 4,
+      "completed": 4,
+      "attempted": 4,
+      "missing": 0,
+      "primary_endpoint": 0.25,
+      "accuracy": 0.25,
+      "failures": {},
+      "families": 4,
+      "cases": 4,
+      "resource_totals": {
+        "actions": 0,
+        "generated_tokens": 256,
+        "laya_leaves": 0,
+        "observed_generated_tokens": 256,
+        "repairs": 0,
+        "replans": 0,
+        "s1_calls": 0,
+        "s1_encoder_tokens": 0,
+        "s1_questions": 0,
+        "s2_calls": 8,
+        "s2_leaves": 4,
+        "s2_prompt_tokens": 248,
+        "service_seconds": 0.0004683999577537179,
+        "supervisor_calls": 4,
+        "unknown_usage_calls": 0
+      },
+      "mean_wall_seconds": 0.005432974954601377,
+      "s2_calls_per_success": 8.0,
+      "wall_time_complete": true,
+      "confusion": {
+        "YES": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "NO": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "IRRELEVANT": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "MORE": {
+          "YES": 1,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        }
+      },
+      "class_recall": {
+        "YES": 1.0,
+        "NO": 0.0,
+        "IRRELEVANT": 0.0,
+        "MORE": 0.0
+      },
+      "balanced_accuracy": 0.25,
+      "macro_f1": 0.1,
+      "more_precision": null,
+      "more_recall": 0.0,
+      "invalid_rate": 0.0,
+      "unnecessary_clarification": 0.0,
+      "inappropriate_terminal": 1.0,
+      "probability_cases": 0,
+      "brier": null,
+      "log_loss": null,
+      "ece_10_bins": null
+    }
+  }
+}

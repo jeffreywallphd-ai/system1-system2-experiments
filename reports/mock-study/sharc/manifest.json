@@ -1,0 +1,262 @@
+{
+  "schema_version": 1,
+  "fingerprint": "98b0da2baf604e61cf2e4d0409bb3e23c16751c55240c98750e85ff56d1d3db8",
+  "binding": {
+    "config": {
+      "schema_version": 1,
+      "experiment_id": "mock_sharc",
+      "execution_mode": "mock",
+      "stage": "smoke",
+      "policies": [
+        "B0_simple",
+        "B1_laya",
+        "B2_s2",
+        "B3_cascade",
+        "B4_triage",
+        "H1_plan_once",
+        "H2_mixed",
+        "C1_s2_workers"
+      ],
+      "seeds": [
+        17
+      ],
+      "dataset": "C:\\ai-projects\\system1-system2-experiments\\artifacts\\mock-study-v2\\datasets\\sharc",
+      "partition": "development",
+      "context_track": "full_coverage",
+      "budgets": {
+        "s1_calls": 64,
+        "s2_calls": 10,
+        "generated_tokens": 16384,
+        "tokens_per_call": 4096,
+        "max_leaves": 8,
+        "max_depth": 2,
+        "replans": 2,
+        "repairs": 1,
+        "steps": 50,
+        "model_seconds": 600,
+        "case_seconds": 1800
+      },
+      "routing_artifact": "C:\\ai-projects\\system1-system2-experiments\\artifacts\\mock-study-v2\\gate.json",
+      "baseline_artifact": "C:\\ai-projects\\system1-system2-experiments\\artifacts\\mock-study-v2\\majority.json",
+      "analysis": {
+        "resamples": 200,
+        "seed": 812
+      }
+    },
+    "dataset_checksums": {
+      "cases.jsonl": "0d5d6492bea917eae305832f282cba728833c023200e81cc91c6d6ef6b0f4abb",
+      "manifest.json": "68eb7e0341c32b57f13b672515da946733da343bf8b4b6313a76793c5e0a841a",
+      "private/labels.jsonl": "1c085eed9aed3defa08cc089050fe554bdf13f61d11712e718830b972eddee67",
+      "public.jsonl": "5719ffab262d081416d6dbb8a0a7d8536f7bb74ce46b93dc18113620e6dc9b04"
+    },
+    "dataset_manifest": {
+      "schema_version": 1,
+      "provenance": {
+        "execution_mode": "mock",
+        "benchmark_variant": "synthetic_sharc_schema_fixtures"
+      },
+      "cases": 4,
+      "partitions": {
+        "development": 4
+      },
+      "families": 4
+    },
+    "software": {
+      "git_revision": "6fbeee51db9b538657c4f1c6d2debb6fc01b77c0",
+      "source_hash": "0ddfcb3b117947988779e68203333d3f66cb27e13e89ad26dedc8a733f126896",
+      "source_files": {
+        "__init__.py": "d0350f6bb7fec39948deb17f4b8423ea964c322e10c385ac081002457b402915",
+        "assets.py": "0fa414070d237395b27d657fb5202b33057545f73af55866d22757bb835ce7a3",
+        "auditing.py": "ec81941b2a80041107e46912225ec3144a31c36e4d752ccb16ecd2a2c45ae3d3",
+        "benchmarks/__init__.py": "f88699efe21c44c761bfa4e34aed503ef450aa19e955354bd1912358fefd45ef",
+        "benchmarks/alfworld.py": "dd36cf3a4b2d731b3dbfe00425599296c232a7e09f0f96b9ad5a6e2c775ee585",
+        "benchmarks/context_rules.py": "bb65451ab85d59deaa263002ad40604077594bbed3e57861090f0c9328f0a031",
+        "benchmarks/prepare.py": "49fab7066df1efe38d5dcb7a94b3ef2b698f549405d8ea3ea734c115252de6f0",
+        "benchmarks/process.py": "ac1a2be87a3770e881200cca158d9f656570cf15b91302d4801bf2588af0dc64",
+        "benchmarks/sharc.py": "22ca7a4eb0b7d73c5364fdb24c6bedec71872ca09bf903ffd6c1a2cc61a6050b",
+        "calibration.py": "b743ab704b0d2a9c2a45148bd7422c5acc7ed8f1454e8bbb7086a229f02ebbfc",
+        "cli.py": "ab4c755fd15dac2f61146c2597057c2bf936faa3b2141dfbba3aca99185e1428",
+        "config.py": "47c54388b05b64ab4f3cf8c4aabf72ff451e4996f8aa59062ad7468181affdca",
+        "domain.py": "2b69356b87f739d20fe86d1eefef06f6d8eb2e82f1a734b375224fa7f9d5c281",
+        "evaluation.py": "4a9ddf8d61ec8d84277b7f68ff5c3552de0d6e470412617da96ac36675f25aee",
+        "governor.py": "3ede4242a5fd32970d4af1e3d2755f1a7ceadeca375f7f17ec0008495ef0b247",
+        "models/__init__.py": "766389993727a90d66a1013581b0b70244e84f65f1b371cb971e1f263c1f7aff",
+        "models/fake.py": "3b8a2c222897d66105de707f9c48a496c4106c880013f08f67d4721248ed7cb0",
+        "models/local.py": "cee1c5bb9328cbf94014f8b1867176aebb414bf81041006b9671de69330ea6f6",
+        "models/process.py": "a8ca7123692dba15dc52c17560ab98a5a559e4755c63d8ecb053dff0257e40fd",
+        "models/prompts.py": "ca0f676c82ce1eb7117079b75c9c68756e6068a42eb0429fa2d7d09d761a780c",
+        "plans.py": "53c58e21ec0a0d4211c261136faa0ae104b13a0a9b17a77eccfc3dd4ca8cdd33",
+        "policies.py": "2b5d5517dbbb2aea9c94bdce3dab50cddc492cef7ece0a66e4db99f31c0229f3",
+        "reporting.py": "e49a2ef071e657c94dc503d71ebd2176402540e059a7fb5dcdd3d3d79b80f011",
+        "runner.py": "6006eca478df31de124fa7501614ec6bca17ce2fa5d239d9c0839970ed5a8c96",
+        "storage.py": "d8e395c2f21c0fb0855ddad50a788970752dc3d868eba828a87842e1933db602"
+      },
+      "prompt_hash": "d3d8adf61f4afab5d65486b5481b62468c2aef54531870871eb5285319b8b4fc",
+      "python": "3.14.3",
+      "offline_lock_hash": "f027c3063d16defed2506f1215bfaba47a41f058e79af50de2b80bacce5ebd40"
+    },
+    "routing": {
+      "schema_version": 1,
+      "artifact_kind": "calibrated_gate",
+      "execution_mode": "mock",
+      "model_identity": {
+        "adapter": "scripted_fake_v1",
+        "role": "s1",
+        "revision": "mock-v1",
+        "execution_mode": "mock",
+        "precision": "not_applicable"
+      },
+      "label_order": [
+        "YES",
+        "NO",
+        "IRRELEVANT",
+        "MORE"
+      ],
+      "temperature": 3.0,
+      "threshold": 0.5,
+      "temperature_grid": [
+        0.5,
+        0.75,
+        1.0,
+        1.5,
+        2.0,
+        3.0
+      ],
+      "threshold_grid": [
+        0.0,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        0.95,
+        1.0
+      ],
+      "objective": "accuracy_minus_reasoner_call_penalty",
+      "penalty": 0.05,
+      "risk_coverage": [
+        {
+          "threshold": 0.0,
+          "utility": 0.25,
+          "coverage": 1.0,
+          "retained_risk": 0.75,
+          "cascade_accuracy": 0.25
+        },
+        {
+          "threshold": 0.5,
+          "utility": 0.95,
+          "coverage": 0.0,
+          "retained_risk": null,
+          "cascade_accuracy": 1.0
+        },
+        {
+          "threshold": 0.6,
+          "utility": 0.95,
+          "coverage": 0.0,
+          "retained_risk": null,
+          "cascade_accuracy": 1.0
+        },
+        {
+          "threshold": 0.7,
+          "utility": 0.95,
+          "coverage": 0.0,
+          "retained_risk": null,
+          "cascade_accuracy": 1.0
+        },
+        {
+          "threshold": 0.8,
+          "utility": 0.95,
+          "coverage": 0.0,
+          "retained_risk": null,
+          "cascade_accuracy": 1.0
+        },
+        {
+          "threshold": 0.9,
+          "utility": 0.95,
+          "coverage": 0.0,
+          "retained_risk": null,
+          "cascade_accuracy": 1.0
+        },
+        {
+          "threshold": 0.95,
+          "utility": 0.95,
+          "coverage": 0.0,
+          "retained_risk": null,
+          "cascade_accuracy": 1.0
+        },
+        {
+          "threshold": 1.0,
+          "utility": 0.95,
+          "coverage": 0.0,
+          "retained_risk": null,
+          "cascade_accuracy": 1.0
+        }
+      ],
+      "calibration_hash": "3f015179552627f67636ae4a5444aca64d54a5c89b7bf0185e933de7c7775e22",
+      "development_hash": "b3c83584f54fa76d11c2598410dfad728c63dfed706842b153b89bf3e5d62cb1",
+      "calibration_ids": [
+        "fit-cal-0",
+        "fit-cal-1",
+        "fit-cal-2",
+        "fit-cal-3"
+      ],
+      "development_ids": [
+        "fit-dev-0",
+        "fit-dev-1",
+        "fit-dev-2",
+        "fit-dev-3"
+      ],
+      "calibration_families": [
+        "cal-family-0",
+        "cal-family-1",
+        "cal-family-2",
+        "cal-family-3"
+      ],
+      "development_families": [
+        "dev-family-0",
+        "dev-family-1",
+        "dev-family-2",
+        "dev-family-3"
+      ]
+    },
+    "baseline": {
+      "artifact_kind": "majority",
+      "majority_label": "YES",
+      "training_ids": [
+        "mock-training-example"
+      ],
+      "training_hash": "abaf95c933ef9f95a8027b7c0afd67d4b1a42da818284b005f1a96cac1794488",
+      "training_families": [
+        "mock-training-family"
+      ],
+      "tie_break": [
+        "YES",
+        "NO",
+        "IRRELEVANT",
+        "MORE"
+      ]
+    },
+    "asset_locks": {}
+  },
+  "started_at": "2026-09-26T21:03:01.710900+00:00",
+  "execution_mode": "mock",
+  "hardware": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "cpu_count": 20
+  },
+  "command": [
+    "C:\\ai-projects\\system1-system2-experiments\\s1s2lab\\cli.py",
+    "demo",
+    "--out",
+    "artifacts/mock-study-v2"
+  ],
+  "concurrency": 1,
+  "cache": false,
+  "energy_measurement": null,
+  "deviations": [
+    "Sequential logical workers",
+    "No automatic model downloads",
+    "No warmup; cold loading recorded separately",
+    "Cold model loading and shared encoding preflight are outside trial timing"
+  ]
+}

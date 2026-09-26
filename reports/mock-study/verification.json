@@ -1,0 +1,79 @@
+{
+  "verified_at_utc": "2026-09-26T21:03:38.927195+00:00",
+  "execution_mode": "mock",
+  "unit_test_command": "python -m unittest discover -s tests -q",
+  "tests_run": 56,
+  "passed": 53,
+  "skipped_real_capability_checks": 3,
+  "failures": 0,
+  "demo_command": "python -m s1s2lab.cli demo --out artifacts/mock-study-v2",
+  "trial_counts": {
+    "sharc": 32,
+    "context_rules": 128,
+    "alfworld": 16
+  },
+  "resume_verified": true,
+  "model_downloads_performed": false,
+  "official_benchmark_downloads_performed": false,
+  "real_model_inference_performed": false,
+  "real_readiness": {
+    "execution_mode": "real",
+    "python": "3.14.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "cpu_count": 20,
+    "models": {
+      "s1": {
+        "status": "BLOCKED",
+        "reasons": [
+          "Missing optional package laya",
+          "Local model snapshot is missing",
+          "Asset lock missing"
+        ],
+        "encoding": "not_measured",
+        "identity": {
+          "adapter": "laya_sdk",
+          "model_id": "convaiinnovations/laya",
+          "subfolder": "multilingual",
+          "revision": null,
+          "local_path": "data/models/laya",
+          "asset_lock": "manifests/laya_assets.json",
+          "runtime_lock": "manifests/runtime_local.json",
+          "device": "cpu",
+          "precision": "float32",
+          "max_len": 8192,
+          "head_max_len": 512
+        }
+      },
+      "s2": {
+        "status": "BLOCKED",
+        "reasons": [
+          "Local model snapshot is missing",
+          "Asset lock missing"
+        ],
+        "encoding": "not_measured",
+        "identity": {
+          "adapter": "transformers",
+          "model_id": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+          "revision": null,
+          "local_path": "data/models/deepseek",
+          "asset_lock": "manifests/deepseek_assets.json",
+          "runtime_lock": "manifests/runtime_local.json",
+          "device": "cuda:0",
+          "precision": "4bit_nf4",
+          "max_len": 8192,
+          "temperature": 0.6,
+          "top_p": 0.95
+        }
+      }
+    },
+    "gpu_measurement": "not_probed_without_explicit_model_loading",
+    "dataset": {
+      "path": "data/context_rules_v1",
+      "available": false
+    }
+  },
+  "source_hash": "0ddfcb3b117947988779e68203333d3f66cb27e13e89ad26dedc8a733f126896",
+  "brief_sha256": "eac58aba91691e44f3935973a12bb6b7326033f7966e3d7d8d18f73905345be8",
+  "hosted_ci_executed": false,
+  "notes": "Synthetic fixtures validate harness behavior, not empirical model performance."
+}

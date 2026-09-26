@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "experiment_id": "context_rules_reference_pilot",
+  "execution_mode": "real",
+  "stage": "pilot",
+  "dataset": "data/context_rules_v1",
+  "partition": "development",
+  "context_track": "common_fit",
+  "policies": ["B0_simple", "B1_laya", "B2_s2", "B3_cascade", "B4_triage", "H1_plan_once", "H2_mixed", "C1_s2_workers"],
+  "seeds": [17, 29, 43],
+  "models": {
+    "s1": {
+      "adapter": "laya_sdk", "model_id": "convaiinnovations/laya", "subfolder": "multilingual",
+      "revision": null, "local_path": "data/models/laya", "asset_lock": "manifests/laya_assets.json",
+      "runtime_lock": "manifests/runtime_reference.json", "device": "cpu", "precision": "float32",
+      "max_len": 8192, "head_max_len": 512
+    },
+    "s2": {
+      "adapter": "transformers", "model_id": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+      "revision": null, "local_path": "data/models/deepseek", "asset_lock": "manifests/deepseek_assets.json",
+      "runtime_lock": "manifests/runtime_reference.json", "device": "cuda:0", "precision": "bfloat16",
+      "max_len": 16384, "temperature": 0.6, "top_p": 0.95
+    }
+  },
+  "budgets": {"s1_calls": 64, "s2_calls": 16, "generated_tokens": 65536, "tokens_per_call": 8192,
+    "max_leaves": 8, "max_depth": 2, "replans": 2, "repairs": 1, "model_seconds": 600, "case_seconds": 3600, "steps": 50},
+  "routing_artifact": null,
+  "baseline_artifact": null,
+  "analysis": {"resamples": 10000, "seed": 812},
+  "notes": "Higher-headroom pilot. A separate precision/budget series from local_low_vram; freeze only after development readiness studies."
+}

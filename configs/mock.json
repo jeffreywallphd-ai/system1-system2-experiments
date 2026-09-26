@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "experiment_id": "mock_health",
+  "execution_mode": "mock",
+  "stage": "smoke",
+  "policies": ["B0_simple", "B1_laya", "B2_s2", "B3_cascade", "B4_triage", "H1_plan_once", "H2_mixed", "C1_s2_workers"],
+  "seeds": [17],
+  "notes": "Use the demo command for a complete generated study with fitted synthetic artifacts."
+}

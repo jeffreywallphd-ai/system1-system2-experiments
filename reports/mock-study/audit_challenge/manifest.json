@@ -1,0 +1,32 @@
+{
+  "source_run": "836d8f3e2b8803c7739a540df2e508956ac21d38ba64bc678ad5be557894bb49",
+  "execution_mode": "mock",
+  "seed": 821,
+  "sample": [
+    "7643358984edcd39c427e241",
+    "0ac9f38417791845f228ed6b"
+  ],
+  "sample_kind": "challenge_corrupted_decisions",
+  "readiness": {
+    "s1": {
+      "status": "READY",
+      "identity": {
+        "adapter": "scripted_fake_v1",
+        "role": "s1",
+        "revision": "mock-v1",
+        "execution_mode": "mock",
+        "precision": "not_applicable"
+      }
+    },
+    "s2": {
+      "status": "READY",
+      "identity": {
+        "adapter": "scripted_fake_v1",
+        "role": "s2",
+        "revision": "mock-v1",
+        "execution_mode": "mock",
+        "precision": "not_applicable"
+      }
+    }
+  }
+}

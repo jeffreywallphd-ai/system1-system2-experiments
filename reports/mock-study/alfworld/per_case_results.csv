@@ -1,0 +1,17 @@
+case_id,family_id,benchmark,policy_id,seed,gold,prediction,correct,status,wall_seconds,actions,generated_tokens,laya_leaves,observed_generated_tokens,repairs,replans,s1_calls,s1_encoder_tokens,s1_questions,s2_calls,s2_leaves,s2_prompt_tokens,service_seconds,supervisor_calls,unknown_usage_calls
+fake-game-0,fake-game-0,alfworld,B0_simple,17,,,1,COMPLETED,0.013527199975214899,8,0,0,0,0,0,0,0,0,0,0,0,0.0,0,0
+fake-game-0,fake-game-0,alfworld,B1_laya,17,,,1,COMPLETED,0.00949249998666346,3,0,0,0,0,0,3,111,3,0,0,0,0.00018399988766759634,0,0
+fake-game-0,fake-game-0,alfworld,B2_s2,17,,,1,COMPLETED,0.01011929998639971,3,96,0,96,0,0,0,0,0,3,0,111,0.00016259995754808187,0,0
+fake-game-0,fake-game-0,alfworld,B3_cascade,17,,,1,COMPLETED,0.010772399953566492,3,0,0,0,0,0,3,111,3,0,0,0,0.00017550005577504635,0,0
+fake-game-0,fake-game-0,alfworld,B4_triage,17,,,1,COMPLETED,0.014195700059644878,3,0,0,0,0,0,6,260,6,0,0,0,0.000354900024831295,0,0
+fake-game-0,fake-game-0,alfworld,H1_plan_once,17,,,1,COMPLETED,0.021900300052948296,3,32,3,32,0,0,3,153,3,1,0,22,0.00025480007752776146,1,0
+fake-game-0,fake-game-0,alfworld,H2_mixed,17,,,1,COMPLETED,0.01049570005852729,3,32,3,32,0,0,3,153,3,1,0,22,0.00024819979444146156,1,0
+fake-game-0,fake-game-0,alfworld,C1_s2_workers,17,,,1,COMPLETED,0.010593899991363287,3,128,0,128,0,0,0,0,0,4,3,175,0.00022000004537403584,1,0
+fake-game-1,fake-game-1,alfworld,B0_simple,17,,,1,COMPLETED,0.016837299917824566,8,0,0,0,0,0,0,0,0,0,0,0,0.0,0,0
+fake-game-1,fake-game-1,alfworld,B1_laya,17,,,1,COMPLETED,0.008965999935753644,3,0,0,0,0,0,3,111,3,0,0,0,0.0001721000298857689,0,0
+fake-game-1,fake-game-1,alfworld,B2_s2,17,,,1,COMPLETED,0.009044599952176213,3,96,0,96,0,0,0,0,0,3,0,111,0.00016469997353851795,0,0
+fake-game-1,fake-game-1,alfworld,B3_cascade,17,,,1,COMPLETED,0.010212900000624359,3,0,0,0,0,0,3,111,3,0,0,0,0.0001678998814895749,0,0
+fake-game-1,fake-game-1,alfworld,B4_triage,17,,,1,COMPLETED,0.014711800031363964,3,0,0,0,0,0,6,260,6,0,0,0,0.00037299981340765953,0,0
+fake-game-1,fake-game-1,alfworld,H1_plan_once,17,,,1,COMPLETED,0.010526499943807721,3,32,3,32,0,0,3,153,3,1,0,22,0.00023930007591843605,1,0
+fake-game-1,fake-game-1,alfworld,H2_mixed,17,,,1,COMPLETED,0.012682999949902296,3,32,3,32,0,0,3,153,3,1,0,22,0.00024530012160539627,1,0
+fake-game-1,fake-game-1,alfworld,C1_s2_workers,17,,,1,COMPLETED,0.010361300082877278,3,128,0,128,0,0,0,0,0,4,3,175,0.00023340003099292517,1,0

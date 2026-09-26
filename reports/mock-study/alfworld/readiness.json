@@ -1,0 +1,22 @@
+{
+  "s1": {
+    "status": "READY",
+    "identity": {
+      "adapter": "scripted_fake_v1",
+      "role": "s1",
+      "revision": "mock-v1",
+      "execution_mode": "mock",
+      "precision": "not_applicable"
+    }
+  },
+  "s2": {
+    "status": "READY",
+    "identity": {
+      "adapter": "scripted_fake_v1",
+      "role": "s2",
+      "revision": "mock-v1",
+      "execution_mode": "mock",
+      "precision": "not_applicable"
+    }
+  }
+}

@@ -1,0 +1,3 @@
+# Offline runtime and tests have zero third-party dependencies.
+# Requires Python >=3.11. Exact Python/platform/source hashes are recorded per run.
+# No pip installation is needed when running from the repository root.

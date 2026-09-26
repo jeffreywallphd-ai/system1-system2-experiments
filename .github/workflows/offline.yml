@@ -1,0 +1,21 @@
+name: Offline correctness
+on: [push, pull_request]
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.11', '3.12']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m unittest discover -s tests -v
+      - run: python -m s1s2lab.cli doctor --config configs/mock.json
+      - run: python -m s1s2lab.cli demo --out artifacts/ci-smoke
+      - uses: actions/upload-artifact@v4
+        with:
+          name: synthetic-study-${{ matrix.os }}-${{ matrix.python }}
+          path: artifacts/ci-smoke

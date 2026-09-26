@@ -1,0 +1,10 @@
+# Optional starting environment, NOT a validated cross-platform dependency lock.
+# Use Python 3.11/3.12 in a separate environment. Select torch for your hardware.
+# Verify real capability tests, then capture the exact environment with lock-runtime.
+laya==0.3.20
+transformers==4.51.3
+huggingface-hub>=0.30,<1.0
+safetensors>=0.4
+accelerate>=0.26
+# bitsandbytes is additionally needed for the explicit 4bit_nf4 profile.
+# ALFWorld/TextWorld have their own platform-dependent installation instructions.

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "experiment_id": "mock_context_rules",
+  "execution_mode": "mock",
+  "stage": "smoke",
+  "policies": [
+    "B0_simple",
+    "B1_laya",
+    "B2_s2",
+    "B3_cascade",
+    "B4_triage",
+    "H1_plan_once",
+    "H2_mixed",
+    "C1_s2_workers"
+  ],
+  "seeds": [
+    17
+  ],
+  "dataset": "C:\\ai-projects\\system1-system2-experiments\\artifacts\\mock-study-v2\\datasets\\context_rules",
+  "partition": "development",
+  "context_track": "full_coverage",
+  "budgets": {
+    "s1_calls": 64,
+    "s2_calls": 10,
+    "generated_tokens": 16384,
+    "tokens_per_call": 4096,
+    "max_leaves": 8,
+    "max_depth": 2,
+    "replans": 2,
+    "repairs": 1,
+    "steps": 50,
+    "model_seconds": 600,
+    "case_seconds": 1800
+  },
+  "routing_artifact": "C:\\ai-projects\\system1-system2-experiments\\artifacts\\mock-study-v2\\gate.json",
+  "baseline_artifact": "C:\\ai-projects\\system1-system2-experiments\\artifacts\\mock-study-v2\\majority.json",
+  "analysis": {
+    "resamples": 200,
+    "seed": 812
+  }
+}

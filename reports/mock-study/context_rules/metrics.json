@@ -1,0 +1,834 @@
+{
+  "execution_mode": "mock",
+  "results": {
+    "context_rules/B0_simple": {
+      "benchmark": "context_rules",
+      "intended": 16,
+      "completed": 16,
+      "attempted": 16,
+      "missing": 0,
+      "primary_endpoint": 0.0,
+      "accuracy": 0.25,
+      "failures": {},
+      "families": 2,
+      "cases": 16,
+      "resource_totals": {
+        "actions": 0,
+        "generated_tokens": 0,
+        "laya_leaves": 0,
+        "observed_generated_tokens": 0,
+        "repairs": 0,
+        "replans": 0,
+        "s1_calls": 0,
+        "s1_encoder_tokens": 0,
+        "s1_questions": 0,
+        "s2_calls": 0,
+        "s2_leaves": 0,
+        "s2_prompt_tokens": 0,
+        "service_seconds": 0.0,
+        "supervisor_calls": 0,
+        "unknown_usage_calls": 0
+      },
+      "mean_wall_seconds": 0.0009990874823415652,
+      "s2_calls_per_success": 0.0,
+      "wall_time_complete": true,
+      "confusion": {
+        "YES": {
+          "YES": 4,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "NO": {
+          "YES": 8,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "IRRELEVANT": {
+          "YES": 2,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "MORE": {
+          "YES": 2,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        }
+      },
+      "class_recall": {
+        "YES": 1.0,
+        "NO": 0.0,
+        "IRRELEVANT": 0.0,
+        "MORE": 0.0
+      },
+      "balanced_accuracy": 0.25,
+      "macro_f1": 0.1,
+      "more_precision": null,
+      "more_recall": 0.0,
+      "invalid_rate": 0.0,
+      "unnecessary_clarification": 0.0,
+      "inappropriate_terminal": 1.0,
+      "probability_cases": 0,
+      "brier": null,
+      "log_loss": null,
+      "ece_10_bins": null,
+      "pair_accuracy": {
+        "flip": 0.0,
+        "missing": 0.0,
+        "distractor": 0.0,
+        "paraphrase": 0.0,
+        "correction": 0.0,
+        "option_order": 0.0,
+        "irrelevant": 0.0
+      },
+      "unnecessary_decision_changes": {
+        "distractor": 0.0,
+        "paraphrase": 0.0,
+        "option_order": 0.0
+      },
+      "by_depth": {
+        "2": 0.25,
+        "3": 0.25
+      }
+    },
+    "context_rules/B1_laya": {
+      "benchmark": "context_rules",
+      "intended": 16,
+      "completed": 16,
+      "attempted": 16,
+      "missing": 0,
+      "primary_endpoint": 0.0,
+      "accuracy": 0.25,
+      "failures": {},
+      "families": 2,
+      "cases": 16,
+      "resource_totals": {
+        "actions": 0,
+        "generated_tokens": 0,
+        "laya_leaves": 0,
+        "observed_generated_tokens": 0,
+        "repairs": 0,
+        "replans": 0,
+        "s1_calls": 16,
+        "s1_encoder_tokens": 1600,
+        "s1_questions": 16,
+        "s2_calls": 0,
+        "s2_leaves": 0,
+        "s2_prompt_tokens": 0,
+        "service_seconds": 0.0013675999362021685,
+        "supervisor_calls": 0,
+        "unknown_usage_calls": 0
+      },
+      "mean_wall_seconds": 0.002130406253854744,
+      "s2_calls_per_success": 0.0,
+      "wall_time_complete": true,
+      "confusion": {
+        "YES": {
+          "YES": 4,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "NO": {
+          "YES": 6,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 2,
+          "INVALID": 0
+        },
+        "IRRELEVANT": {
+          "YES": 2,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "MORE": {
+          "YES": 2,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        }
+      },
+      "class_recall": {
+        "YES": 1.0,
+        "NO": 0.0,
+        "IRRELEVANT": 0.0,
+        "MORE": 0.0
+      },
+      "balanced_accuracy": 0.25,
+      "macro_f1": 0.1111111111111111,
+      "more_precision": 0.0,
+      "more_recall": 0.0,
+      "invalid_rate": 0.0,
+      "unnecessary_clarification": 0.14285714285714285,
+      "inappropriate_terminal": 1.0,
+      "probability_cases": 16,
+      "brier": 1.02,
+      "log_loss": 1.8161075557302175,
+      "ece_10_bins": 0.44999999999999996,
+      "log_loss_clip": 1e-12,
+      "reliability_bins": [
+        {
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "count": 16,
+          "confidence": 0.7,
+          "accuracy": 0.25
+        },
+        {
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        }
+      ],
+      "pair_accuracy": {
+        "flip": 0.0,
+        "missing": 0.0,
+        "distractor": 0.0,
+        "paraphrase": 0.0,
+        "correction": 0.0,
+        "option_order": 0.0,
+        "irrelevant": 0.0
+      },
+      "unnecessary_decision_changes": {
+        "distractor": 0.0,
+        "paraphrase": 0.0,
+        "option_order": 1.0
+      },
+      "by_depth": {
+        "2": 0.25,
+        "3": 0.25
+      }
+    },
+    "context_rules/B2_s2": {
+      "benchmark": "context_rules",
+      "intended": 16,
+      "completed": 16,
+      "attempted": 16,
+      "missing": 0,
+      "primary_endpoint": 0.0,
+      "accuracy": 0.25,
+      "failures": {},
+      "families": 2,
+      "cases": 16,
+      "resource_totals": {
+        "actions": 0,
+        "generated_tokens": 512,
+        "laya_leaves": 0,
+        "observed_generated_tokens": 512,
+        "repairs": 0,
+        "replans": 0,
+        "s1_calls": 0,
+        "s1_encoder_tokens": 0,
+        "s1_questions": 0,
+        "s2_calls": 16,
+        "s2_leaves": 0,
+        "s2_prompt_tokens": 1600,
+        "service_seconds": 0.0012351000914350152,
+        "supervisor_calls": 0,
+        "unknown_usage_calls": 0
+      },
+      "mean_wall_seconds": 0.002011875003518071,
+      "s2_calls_per_success": 4.0,
+      "wall_time_complete": true,
+      "confusion": {
+        "YES": {
+          "YES": 4,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "NO": {
+          "YES": 6,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 2,
+          "INVALID": 0
+        },
+        "IRRELEVANT": {
+          "YES": 2,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "MORE": {
+          "YES": 2,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        }
+      },
+      "class_recall": {
+        "YES": 1.0,
+        "NO": 0.0,
+        "IRRELEVANT": 0.0,
+        "MORE": 0.0
+      },
+      "balanced_accuracy": 0.25,
+      "macro_f1": 0.1111111111111111,
+      "more_precision": 0.0,
+      "more_recall": 0.0,
+      "invalid_rate": 0.0,
+      "unnecessary_clarification": 0.14285714285714285,
+      "inappropriate_terminal": 1.0,
+      "probability_cases": 0,
+      "brier": null,
+      "log_loss": null,
+      "ece_10_bins": null,
+      "pair_accuracy": {
+        "flip": 0.0,
+        "missing": 0.0,
+        "distractor": 0.0,
+        "paraphrase": 0.0,
+        "correction": 0.0,
+        "option_order": 0.0,
+        "irrelevant": 0.0
+      },
+      "unnecessary_decision_changes": {
+        "distractor": 0.0,
+        "paraphrase": 0.0,
+        "option_order": 1.0
+      },
+      "by_depth": {
+        "2": 0.25,
+        "3": 0.25
+      }
+    },
+    "context_rules/B3_cascade": {
+      "benchmark": "context_rules",
+      "intended": 16,
+      "completed": 16,
+      "attempted": 16,
+      "missing": 0,
+      "primary_endpoint": 0.0,
+      "accuracy": 0.25,
+      "failures": {},
+      "families": 2,
+      "cases": 16,
+      "resource_totals": {
+        "actions": 0,
+        "generated_tokens": 512,
+        "laya_leaves": 0,
+        "observed_generated_tokens": 512,
+        "repairs": 0,
+        "replans": 0,
+        "s1_calls": 16,
+        "s1_encoder_tokens": 1600,
+        "s1_questions": 16,
+        "s2_calls": 16,
+        "s2_leaves": 0,
+        "s2_prompt_tokens": 1600,
+        "service_seconds": 0.002541199908591807,
+        "supervisor_calls": 0,
+        "unknown_usage_calls": 0
+      },
+      "mean_wall_seconds": 0.004087056244316045,
+      "s2_calls_per_success": 4.0,
+      "wall_time_complete": true,
+      "confusion": {
+        "YES": {
+          "YES": 4,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "NO": {
+          "YES": 6,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 2,
+          "INVALID": 0
+        },
+        "IRRELEVANT": {
+          "YES": 2,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "MORE": {
+          "YES": 2,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        }
+      },
+      "class_recall": {
+        "YES": 1.0,
+        "NO": 0.0,
+        "IRRELEVANT": 0.0,
+        "MORE": 0.0
+      },
+      "balanced_accuracy": 0.25,
+      "macro_f1": 0.1111111111111111,
+      "more_precision": 0.0,
+      "more_recall": 0.0,
+      "invalid_rate": 0.0,
+      "unnecessary_clarification": 0.14285714285714285,
+      "inappropriate_terminal": 1.0,
+      "probability_cases": 0,
+      "brier": null,
+      "log_loss": null,
+      "ece_10_bins": null,
+      "pair_accuracy": {
+        "flip": 0.0,
+        "missing": 0.0,
+        "distractor": 0.0,
+        "paraphrase": 0.0,
+        "correction": 0.0,
+        "option_order": 0.0,
+        "irrelevant": 0.0
+      },
+      "unnecessary_decision_changes": {
+        "distractor": 0.0,
+        "paraphrase": 0.0,
+        "option_order": 1.0
+      },
+      "by_depth": {
+        "2": 0.25,
+        "3": 0.25
+      }
+    },
+    "context_rules/B4_triage": {
+      "benchmark": "context_rules",
+      "intended": 16,
+      "completed": 16,
+      "attempted": 16,
+      "missing": 0,
+      "primary_endpoint": 0.0,
+      "accuracy": 0.25,
+      "failures": {},
+      "families": 2,
+      "cases": 16,
+      "resource_totals": {
+        "actions": 0,
+        "generated_tokens": 0,
+        "laya_leaves": 0,
+        "observed_generated_tokens": 0,
+        "repairs": 0,
+        "replans": 0,
+        "s1_calls": 32,
+        "s1_encoder_tokens": 2926,
+        "s1_questions": 32,
+        "s2_calls": 0,
+        "s2_leaves": 0,
+        "s2_prompt_tokens": 0,
+        "service_seconds": 0.002615399775095284,
+        "supervisor_calls": 0,
+        "unknown_usage_calls": 0
+      },
+      "mean_wall_seconds": 0.004100174999621231,
+      "s2_calls_per_success": 0.0,
+      "wall_time_complete": true,
+      "confusion": {
+        "YES": {
+          "YES": 4,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "NO": {
+          "YES": 6,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 2,
+          "INVALID": 0
+        },
+        "IRRELEVANT": {
+          "YES": 2,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "MORE": {
+          "YES": 2,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        }
+      },
+      "class_recall": {
+        "YES": 1.0,
+        "NO": 0.0,
+        "IRRELEVANT": 0.0,
+        "MORE": 0.0
+      },
+      "balanced_accuracy": 0.25,
+      "macro_f1": 0.1111111111111111,
+      "more_precision": 0.0,
+      "more_recall": 0.0,
+      "invalid_rate": 0.0,
+      "unnecessary_clarification": 0.14285714285714285,
+      "inappropriate_terminal": 1.0,
+      "probability_cases": 0,
+      "brier": null,
+      "log_loss": null,
+      "ece_10_bins": null,
+      "pair_accuracy": {
+        "flip": 0.0,
+        "missing": 0.0,
+        "distractor": 0.0,
+        "paraphrase": 0.0,
+        "correction": 0.0,
+        "option_order": 0.0,
+        "irrelevant": 0.0
+      },
+      "unnecessary_decision_changes": {
+        "distractor": 0.0,
+        "paraphrase": 0.0,
+        "option_order": 1.0
+      },
+      "by_depth": {
+        "2": 0.25,
+        "3": 0.25
+      }
+    },
+    "context_rules/H1_plan_once": {
+      "benchmark": "context_rules",
+      "intended": 16,
+      "completed": 16,
+      "attempted": 16,
+      "missing": 0,
+      "primary_endpoint": 0.0,
+      "accuracy": 0.25,
+      "failures": {},
+      "families": 2,
+      "cases": 16,
+      "resource_totals": {
+        "actions": 0,
+        "generated_tokens": 512,
+        "laya_leaves": 16,
+        "observed_generated_tokens": 512,
+        "repairs": 0,
+        "replans": 0,
+        "s1_calls": 16,
+        "s1_encoder_tokens": 1502,
+        "s1_questions": 16,
+        "s2_calls": 16,
+        "s2_leaves": 0,
+        "s2_prompt_tokens": 1102,
+        "service_seconds": 0.0025055003352463245,
+        "supervisor_calls": 16,
+        "unknown_usage_calls": 0
+      },
+      "mean_wall_seconds": 0.005093256266263779,
+      "s2_calls_per_success": 4.0,
+      "wall_time_complete": true,
+      "confusion": {
+        "YES": {
+          "YES": 4,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "NO": {
+          "YES": 8,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "IRRELEVANT": {
+          "YES": 2,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "MORE": {
+          "YES": 2,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        }
+      },
+      "class_recall": {
+        "YES": 1.0,
+        "NO": 0.0,
+        "IRRELEVANT": 0.0,
+        "MORE": 0.0
+      },
+      "balanced_accuracy": 0.25,
+      "macro_f1": 0.1,
+      "more_precision": null,
+      "more_recall": 0.0,
+      "invalid_rate": 0.0,
+      "unnecessary_clarification": 0.0,
+      "inappropriate_terminal": 1.0,
+      "probability_cases": 0,
+      "brier": null,
+      "log_loss": null,
+      "ece_10_bins": null,
+      "pair_accuracy": {
+        "flip": 0.0,
+        "missing": 0.0,
+        "distractor": 0.0,
+        "paraphrase": 0.0,
+        "correction": 0.0,
+        "option_order": 0.0,
+        "irrelevant": 0.0
+      },
+      "unnecessary_decision_changes": {
+        "distractor": 0.0,
+        "paraphrase": 0.0,
+        "option_order": 0.0
+      },
+      "by_depth": {
+        "2": 0.25,
+        "3": 0.25
+      }
+    },
+    "context_rules/H2_mixed": {
+      "benchmark": "context_rules",
+      "intended": 16,
+      "completed": 16,
+      "attempted": 16,
+      "missing": 0,
+      "primary_endpoint": 0.0,
+      "accuracy": 0.25,
+      "failures": {},
+      "families": 2,
+      "cases": 16,
+      "resource_totals": {
+        "actions": 0,
+        "generated_tokens": 512,
+        "laya_leaves": 16,
+        "observed_generated_tokens": 512,
+        "repairs": 0,
+        "replans": 0,
+        "s1_calls": 16,
+        "s1_encoder_tokens": 1502,
+        "s1_questions": 16,
+        "s2_calls": 16,
+        "s2_leaves": 0,
+        "s2_prompt_tokens": 1102,
+        "service_seconds": 0.002489799982868135,
+        "supervisor_calls": 16,
+        "unknown_usage_calls": 0
+      },
+      "mean_wall_seconds": 0.005023350000556093,
+      "s2_calls_per_success": 4.0,
+      "wall_time_complete": true,
+      "confusion": {
+        "YES": {
+          "YES": 4,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "NO": {
+          "YES": 8,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "IRRELEVANT": {
+          "YES": 2,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "MORE": {
+          "YES": 2,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        }
+      },
+      "class_recall": {
+        "YES": 1.0,
+        "NO": 0.0,
+        "IRRELEVANT": 0.0,
+        "MORE": 0.0
+      },
+      "balanced_accuracy": 0.25,
+      "macro_f1": 0.1,
+      "more_precision": null,
+      "more_recall": 0.0,
+      "invalid_rate": 0.0,
+      "unnecessary_clarification": 0.0,
+      "inappropriate_terminal": 1.0,
+      "probability_cases": 0,
+      "brier": null,
+      "log_loss": null,
+      "ece_10_bins": null,
+      "pair_accuracy": {
+        "flip": 0.0,
+        "missing": 0.0,
+        "distractor": 0.0,
+        "paraphrase": 0.0,
+        "correction": 0.0,
+        "option_order": 0.0,
+        "irrelevant": 0.0
+      },
+      "unnecessary_decision_changes": {
+        "distractor": 0.0,
+        "paraphrase": 0.0,
+        "option_order": 0.0
+      },
+      "by_depth": {
+        "2": 0.25,
+        "3": 0.25
+      }
+    },
+    "context_rules/C1_s2_workers": {
+      "benchmark": "context_rules",
+      "intended": 16,
+      "completed": 16,
+      "attempted": 16,
+      "missing": 0,
+      "primary_endpoint": 0.0,
+      "accuracy": 0.25,
+      "failures": {},
+      "families": 2,
+      "cases": 16,
+      "resource_totals": {
+        "actions": 0,
+        "generated_tokens": 1024,
+        "laya_leaves": 0,
+        "observed_generated_tokens": 1024,
+        "repairs": 0,
+        "replans": 0,
+        "s1_calls": 0,
+        "s1_encoder_tokens": 0,
+        "s1_questions": 0,
+        "s2_calls": 32,
+        "s2_leaves": 16,
+        "s2_prompt_tokens": 2604,
+        "service_seconds": 0.002360199810937047,
+        "supervisor_calls": 16,
+        "unknown_usage_calls": 0
+      },
+      "mean_wall_seconds": 0.005002912497729994,
+      "s2_calls_per_success": 8.0,
+      "wall_time_complete": true,
+      "confusion": {
+        "YES": {
+          "YES": 4,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "NO": {
+          "YES": 8,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "IRRELEVANT": {
+          "YES": 2,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        },
+        "MORE": {
+          "YES": 2,
+          "NO": 0,
+          "IRRELEVANT": 0,
+          "MORE": 0,
+          "INVALID": 0
+        }
+      },
+      "class_recall": {
+        "YES": 1.0,
+        "NO": 0.0,
+        "IRRELEVANT": 0.0,
+        "MORE": 0.0
+      },
+      "balanced_accuracy": 0.25,
+      "macro_f1": 0.1,
+      "more_precision": null,
+      "more_recall": 0.0,
+      "invalid_rate": 0.0,
+      "unnecessary_clarification": 0.0,
+      "inappropriate_terminal": 1.0,
+      "probability_cases": 0,
+      "brier": null,
+      "log_loss": null,
+      "ece_10_bins": null,
+      "pair_accuracy": {
+        "flip": 0.0,
+        "missing": 0.0,
+        "distractor": 0.0,
+        "paraphrase": 0.0,
+        "correction": 0.0,
+        "option_order": 0.0,
+        "irrelevant": 0.0
+      },
+      "unnecessary_decision_changes": {
+        "distractor": 0.0,
+        "paraphrase": 0.0,
+        "option_order": 0.0
+      },
+      "by_depth": {
+        "2": 0.25,
+        "3": 0.25
+      }
+    }
+  }
+}

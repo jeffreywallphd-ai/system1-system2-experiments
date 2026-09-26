@@ -1,0 +1,80 @@
+{
+  "execution_mode": "mock",
+  "contrasts": [
+    {
+      "benchmark": "context_rules",
+      "left": "B1_laya",
+      "right": "H2_mixed",
+      "designation": "primary_candidate",
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "p_value": 1.0,
+      "bootstrap_resamples": 200,
+      "undefined_bootstrap_draws": 0,
+      "ci_limitation": null,
+      "s2_call_ratio_ci95": null,
+      "permutation": "exact_family_swap",
+      "clusters": 2,
+      "strata": {
+        "all": 2
+      },
+      "seed": 812,
+      "confidence_level": 0.95,
+      "holm_adjusted_p": 1.0
+    },
+    {
+      "benchmark": "sharc",
+      "left": "B1_laya",
+      "right": "H2_mixed",
+      "designation": "primary_candidate",
+      "difference": 0.0,
+      "ci95": null,
+      "p_value": 1.0,
+      "bootstrap_resamples": 200,
+      "undefined_bootstrap_draws": 183,
+      "ci_limitation": "CI withheld if any draw lacks a required class or fewer than two families",
+      "s2_call_ratio_ci95": null,
+      "permutation": "exact_family_swap",
+      "clusters": 4,
+      "strata": {
+        "all": 4
+      },
+      "seed": 812,
+      "confidence_level": 0.95,
+      "holm_adjusted_p": 1.0
+    },
+    {
+      "benchmark": "alfworld",
+      "left": "B1_laya",
+      "right": "H2_mixed",
+      "designation": "primary_candidate",
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "p_value": 1.0,
+      "bootstrap_resamples": 200,
+      "undefined_bootstrap_draws": 0,
+      "ci_limitation": null,
+      "s2_call_ratio_ci95": null,
+      "permutation": "exact_family_swap",
+      "clusters": 2,
+      "strata": {
+        "development": 2
+      },
+      "seed": 812,
+      "confidence_level": 0.95,
+      "holm_adjusted_p": 1.0
+    }
+  ],
+  "family": "H2_mixed versus B1_laya on the three prespecified primary endpoints",
+  "run_fingerprints": [
+    "836d8f3e2b8803c7739a540df2e508956ac21d38ba64bc678ad5be557894bb49",
+    "98b0da2baf604e61cf2e4d0409bb3e23c16751c55240c98750e85ff56d1d3db8",
+    "b3f57459e3d639f76ffe99b5e23df538abbe4e3e330408ce484ae1443a82e8b0"
+  ]
+}

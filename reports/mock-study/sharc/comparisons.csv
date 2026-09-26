@@ -1,0 +1,8 @@
+benchmark,left,right,designation,difference,ci95,p_value,bootstrap_resamples,undefined_bootstrap_draws,ci_limitation,s2_call_ratio_ci95,permutation,clusters,strata,seed,confidence_level
+sharc,B1_laya,B0_simple,exploratory,0.0,,1.0,200,183,CI withheld if any draw lacks a required class or fewer than two families,,exact_family_swap,4,{'all': 4},812,0.95
+sharc,B1_laya,B2_s2,exploratory,0.0,,1.0,200,183,CI withheld if any draw lacks a required class or fewer than two families,,exact_family_swap,4,{'all': 4},812,0.95
+sharc,B1_laya,B3_cascade,exploratory,0.0,,1.0,200,183,CI withheld if any draw lacks a required class or fewer than two families,,exact_family_swap,4,{'all': 4},812,0.95
+sharc,B1_laya,B4_triage,exploratory,0.0,,1.0,200,183,CI withheld if any draw lacks a required class or fewer than two families,,exact_family_swap,4,{'all': 4},812,0.95
+sharc,B1_laya,H1_plan_once,exploratory,0.0,,1.0,200,183,CI withheld if any draw lacks a required class or fewer than two families,,exact_family_swap,4,{'all': 4},812,0.95
+sharc,B1_laya,H2_mixed,primary_candidate,0.0,,1.0,200,183,CI withheld if any draw lacks a required class or fewer than two families,,exact_family_swap,4,{'all': 4},812,0.95
+sharc,B1_laya,C1_s2_workers,exploratory,0.0,,1.0,200,183,CI withheld if any draw lacks a required class or fewer than two families,,exact_family_swap,4,{'all': 4},812,0.95
